@@ -1,0 +1,27 @@
+<slide class="{{ slide.class }}" id="{{ slide.id }}" style="background:{{{ slide.bg }}};">
+  {{# slide.header }}
+  <hgroup>
+    {{{ slide.header}}}
+  </hgroup>
+  {{/ slide.header }}
+  <article data-timings="{{ slide.dt }}">
+    {{{ slide.content }}}
+    <footer class = 'logo'>
+        <div style="position: absolute; left: 1000px; top: 50px; z-index:100">
+            <img src = "assets/img/silviaTerra_logo.png" height="80" width="80">
+        </div>
+        <div style="position: absolute; left: 0px; top: 0px; z-index:100">
+            <img src = "assets/img/barra_vertical_25_ahorro.png" height="1000" width="40">
+        </div>
+    </footer>
+  </article>
+  <!-- Presenter Notes -->
+  {{# slide.pnotes }}
+  <aside class="note" id="{{ id }}">
+    <section>
+      {{{ html }}}
+    </section>
+  </aside>
+  {{/ slide.pnotes }}
+</slide>
+
